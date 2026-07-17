@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sim Wei Zhi | Reflection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="shell">
+  <main>
+    <div class="topbar">
+      <div class="breadcrumb">Jeff's portfolio</div>
+      <nav class="topbar-nav">
+        <a href="index.html" class="nav-link">introduction</a>
+        <a href="projects.html" class="nav-link">projects</a>
+        <a href="reflection.html" class="nav-link active">reflection</a>
+      </nav>
+      <div class="placeholder">2026</div>
+    </div>
+
+    <!-- REFLECTION -->
+    <section id="reflection">
+      <div class="section-head reveal">
+        <div>
+          <h2>What this experience built</h2>
+        </div>
+      </div>
+
+      <div class="reflect-grid reveal">
+        <div class="reflect-card">
+          <div class="md-head">What I learned</div>
+          <p class="body-text">My internship experience at JPMorgan has allowed me to sharpen my technical range and apply my skills beyond the classroom, from full-stack development principles to using software to actually support business needs. When I had just started my internship, I didn't understand why code quality was important and was instead focused on delivering things that work rather than things that are maintainable. Now, after having completed multiple tasks and going through many rounds of code review from senior developers across APAC and EMEA, I finally understand why code structure and readability are so important in a productionized environment, especially as I picked up newer knowledge like LangGraph and agentic AI concepts.</p>
+        </div>
+        <div class="reflect-card">
+          <div class="md-head">Applying KSA</div>
+          <p class="body-text">I applied my knowledge, skills and attitudes by translating business requirements into working software, debugging issues systematically, and iterating on feedback from senior engineers. If I'm honest, my early attempts prioritised speed over reliability, which showed up clearly when an AI assistant I built occasionally called the wrong tool. Rather than patch the symptom, I went back and tightened the tool definitions and added validation, a more rigorous alternative that fixed the root cause instead of the immediate complaint.</p>
+        </div>
+        <div class="reflect-card">
+          <div class="md-head">Growth toward my IT role</div>
+          <p class="body-text">This internship experience has instilled my confidence as a software developer by clarifying my understanding of what it takes to build software that teams can actually depend on. It also exposed weaknesses, one of which being my bad habit of defaulting to solving problems alone before asking for help, which tends to slow me down more than it should. Recognising what's holding me back from unlocking my full potential is changing how I plan to approach future projects, weighing speed against reliability more deliberately and asking for a second opinion earlier rather than later.</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact" style="height:1px;"></div>
+    <footer>
+      built by <span class="placeholder" style="padding:2px 8px;">Sim Wei Zhi</span> | <span id="year"></span>
+    </footer>
+  </main>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+</body>
+</html>

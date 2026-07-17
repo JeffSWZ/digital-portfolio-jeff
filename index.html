@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sim Wei Zhi | Introduction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="shell">
+  <main>
+    <div class="topbar">
+      <div class="breadcrumb">Jeff's portfolio</div>
+      <nav class="topbar-nav">
+        <a href="index.html" class="nav-link active">introduction</a>
+        <a href="projects.html" class="nav-link">projects</a>
+        <a href="reflection.html" class="nav-link">reflection</a>
+      </nav>
+      <div class="placeholder">2026</div>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <section id="introduction">
+      <div class="hero reveal">
+        <div class="profile-card">
+          <img
+            class="profile-photo"
+            src="/images/profile-photo.jpg"
+            alt="Sim Wei Zhi"
+          />
+        </div>
+
+        <div class="hero-copy">
+          <h1>Hi, I'm <span class="fill">Sim Wei Zhi</span>.</h1>
+          <div class="role-line">
+            <span class="placeholder">Software Engineer Intern at JPMorgan</span>
+          </div>
+
+          <div class="contact-row">
+            <a class="contact-chip" href="mailto:jeff.sim.wz@gmail.com">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 6.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Z"/>
+                  <path d="m4.5 7.2 7.5 5.3 7.5-5.3"/>
+                  <path d="m4.5 16.8 6.8-4.8"/>
+                  <path d="m19.5 16.8-6.8-4.8"/>
+                </svg>
+              </span>
+              jeff.sim.wz@gmail.com
+            </a>
+            <a class="contact-chip" href="https://www.linkedin.com/in/jeff-sim-wei-zhi-0762592a9/" target="_blank" rel="noopener noreferrer">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="4.5" y="4.5" width="15" height="15" rx="2.5"/>
+                  <path d="M8.3 10.2v5.8"/>
+                  <path d="M8.3 8.3v.1"/>
+                  <path d="M11.8 16v-3.2c0-1.2.9-2.2 2.1-2.2s2.1 1 2.1 2.2V16"/>
+                </svg>
+              </span>
+              linkedin.com/jeff-sim-wei-zhi
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-grid reveal">
+        <div class="info-card">
+          <div class="label">Company &amp; Department</div>
+          <h3>JPMorgan Chase &amp; Co. | Markets Technology</h3>
+          <p>JPMorgan Chase &amp; Co. is a global financial services firm with businesses spanning investment banking, markets, payments and asset management. I was placed in the Corporate and Investment Bank, specifically the Markets Technology team, where software supports trading and operational workflows.</p>
+        </div>
+        <div class="info-card">
+          <div class="label">Assigned Role &amp; Project</div>
+          <h3>Software Engineering Intern</h3>
+          <p>As a Software Engineering Intern, I developed and improved internal web applications, APIs and automation tools for the Markets business. My work involved building full-stack solutions, learning development best practices, and contributing meaningfully to production systems.</p>
+
+          <div class="ksa-grid">
+            <div class="ksa-card">
+              <span class="ksa-label">Knowledge</span>
+              <ul>
+                <li><strong>Full-stack &amp; system design</strong><span>REST APIs, SDLC and database concepts underpinning web application development.</span></li>
+                <li><strong>Emerging technologies</strong><span>GraphQL, LangChain, LangGraph and Claude agentic tool concepts used for AI-driven features.</span></li>
+                <li><strong>Business &amp; operations</strong><span>Trade lifecycle, cron job scheduling and production support processes like logging and incident management.</span></li>
+              </ul>
+            </div>
+            <div class="ksa-card">
+              <span class="ksa-label">Skills</span>
+              <ul>
+                <li><strong>Technical building</strong><span>Developing REST APIs, React UIs, anomaly detection algorithms and automated tests.</span></li>
+                <li><strong>Communication &amp; collaboration</strong><span>Engaging with stakeholders and working closely with teams across projects.</span></li>
+                <li><strong>Innovation &amp; independent learning</strong><span>Picking up new frameworks quickly and applying critical thinking to novel problems.</span></li>
+              </ul>
+            </div>
+            <div class="ksa-card">
+              <span class="ksa-label">Attitude</span>
+              <ul>
+                <li><strong>Proactive &amp; resourceful</strong><span>Taking ownership of tasks and adapting quickly to unfamiliar tools and changing requirements.</span></li>
+                <li><strong>Service &amp; team-oriented</strong><span>Supporting front and middle office users while collaborating closely with the team.</span></li>
+                <li><strong>Meticulous &amp; patient</strong><span>Paying close attention to detail during testing, migrations and production support.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="contact" style="height:1px;"></div>
+    <footer>
+      built by <span class="placeholder" style="padding:2px 8px;">Sim Wei Zhi</span> | <span id="year"></span>
+    </footer>
+  </main>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+</body>
+</html>

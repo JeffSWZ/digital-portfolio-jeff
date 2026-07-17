@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sim Wei Zhi | Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="shell">
+  <main>
+    <div class="topbar">
+      <div class="breadcrumb">Jeff's portfolio</div>
+      <nav class="topbar-nav">
+        <a href="index.html" class="nav-link">introduction</a>
+        <a href="projects.html" class="nav-link active">projects</a>
+        <a href="reflection.html" class="nav-link">reflection</a>
+      </nav>
+      <div class="placeholder">2026</div>
+    </div>
+
+    <!-- EVIDENCE OF WORK -->
+    <section id="evidence">
+      <div class="section-head reveal">
+        <div>
+          <h2>Tasks, projects &amp; artifacts</h2>
+        </div>
+      </div>
+
+      <div class="project-showcase">
+        <div class="project-row wide-shot reveal">
+          <div class="project-info">
+            <div class="project-meta">Project 01 <span class="status">Completed</span></div>
+            <h3>LVT Tracker</h3>
+            <p class="project-desc">Built an internal tracker for low-value test trades that replaced fragmented email updates with a single, clear view of trade status. The system spans a Python REST API through to a React dashboard, giving the team a simple end-to-end workflow for recording, monitoring and following up on downstream trade flow.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">React</span><span class="tag">REST APIs</span>
+            </div>
+            <div class="project-ksa">
+              <div class="ksa-item"><span class="ksa-key">Knowledge</span><span class="ksa-val">REST APIs, full-stack development, and SDLC and database concepts.</span></div>
+              <div class="ksa-item"><span class="ksa-key">Skills</span><span class="ksa-val">Critical thinking and building REST APIs and React UI components.</span></div>
+              <div class="ksa-item"><span class="ksa-key">Attitude</span><span class="ksa-val">Service-oriented, proactive and team-oriented.</span></div>
+            </div>
+          </div>
+          <div class="project-media has-image">
+            <img src="/images/lvttrack.jpg" alt="LVT Tracker screenshot" />
+          </div>
+        </div>
+
+        <div class="project-row media-left reveal">
+          <div class="project-info">
+            <div class="project-meta">Project 02 <span class="status">Completed</span></div>
+            <h3>Trade Management Chatbot</h3>
+            <p class="project-desc">Designed and shipped a conversational AI assistant for the CEM Swaps desk that answers trade-support questions and executes fixes through natural language. A LangGraph orchestrator interprets each request, picks the right internal tool, and runs it under the user's own permissions, turning script-heavy support work into something anyone can do just by asking.</p>
+            <div class="tag-row">
+              <span class="tag">LangGraph</span><span class="tag">GraphQL</span><span class="tag">React</span>
+            </div>
+            <div class="project-ksa">
+              <div class="ksa-item"><span class="ksa-key">Knowledge</span><span class="ksa-val">GraphQL, LangChain, LangGraph and Claude agentic tool concepts.</span></div>
+              <div class="ksa-item"><span class="ksa-key">Skills</span><span class="ksa-val">Independent learning and orchestrating GraphQL APIs and agentic tools.</span></div>
+              <div class="ksa-item"><span class="ksa-key">Attitude</span><span class="ksa-val">Proactive, service-oriented and resourceful.</span></div>
+            </div>
+          </div>
+          <div class="project-media media-switch">
+            <div class="media-switch-tabs">
+              <button type="button" class="media-switch-tab active" data-view="screenshot">Screenshot</button>
+              <button type="button" class="media-switch-tab" data-view="demo">Try it live</button>
+            </div>
+            <div class="media-switch-view active" data-view="screenshot">
+              <img src="/images/chatbot.jpg" alt="Trade Management Chatbot screenshot" />
+            </div>
+            <div class="media-switch-view" data-view="demo">
+              <div class="chat-window">
+                <div class="chat-header"><span class="chat-dot"></span> Trade Support Assistant</div>
+                <div class="chat-body" id="chatbot-demo-body">
+                  <div class="chat-hint">Try the sample prompt below to see the assistant respond.</div>
+                </div>
+                <div class="chat-input-row">
+                  <input type="text" class="chat-input" id="chatbot-demo-prompt" value="give me the afr and key details for deal D00000001" readonly />
+                  <button type="button" class="chat-send-btn" id="chatbot-demo-send">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection-block reveal" id="accomplishments">
+        <div class="section-head subsection-head">
+          <div>
+            <h2>Accomplishments</h2>
+          </div>
+        </div>
+
+        <div class="accomplishments-grid">
+          <div class="accomplishment-card">
+            <div class="accomplishment-media">
+              <img src="/images/cybersecurity.jpg" alt="Cybersecurity 60-Day Reinforcement Certificate" />
+            </div>
+            <div class="md-head">Cybersecurity 60-Day Reinforcement Certificate</div>
+            <p>Completed a 60-day cybersecurity reinforcement programme, strengthening secure coding and data-handling practices.</p>
+          </div>
+          <div class="accomplishment-card">
+            <div class="accomplishment-media">
+              <img src="/images/aml.jpg" alt="Global AML Enterprise Training Certificate" />
+            </div>
+            <div class="md-head">Global AML Enterprise Training Certificate</div>
+            <p>Completed JPMorgan's Global AML Enterprise training, building awareness of anti-money laundering obligations and controls.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection-block reveal" id="challenges" class="challenge-section">
+        <div class="section-head subsection-head">
+          <div>
+            <h2>Challenge overview</h2>
+          </div>
+        </div>
+
+        <div class="challenges">
+          <div class="log-block">
+            <div class="log-head">Challenge overview</div>
+            <div class="log-body">
+              <div class="line"><span class="k">Challenge:</span><span class="v">When developing the LVT Tracker, it was difficult to get my code pushed into production because the initial implementation did not yet meet the required standard of code quality.</span></div>
+              <div class="line"><span class="k">Cause:</span><span class="v">The code worked functionally, but it needed stronger structure, clarity, and maintainability before it could be confidently released.</span></div>
+              <div class="line"><span class="k">Resolution:</span><span class="v">I studied existing patterns, sought feedback regularly, and applied SOLID React principles to improve the quality of the implementation.</span></div>
+            </div>
+          </div>
+          <div class="log-block">
+            <div class="log-head">Challenge overview</div>
+            <div class="log-body">
+              <div class="line"><span class="k">Challenge:</span><span class="v">When developing the chatbot, the language model would sometimes answer trade-support questions from its own assumptions instead of running a lookup, or call a tool with missing or malformed arguments, producing inconsistent and occasionally misleading responses.</span></div>
+              <div class="line"><span class="k">Cause:</span><span class="v">Tool definitions lacked clear descriptions and strict argument schemas, giving the model weak signal on when and how to use each tool.</span></div>
+              <div class="line"><span class="k">Resolution:</span><span class="v">I tightened each tool's description and argument schema, added backend validation to catch bad or incomplete calls with helpful errors, and scoped every tool to the requesting user's own permissions, so the agent reliably called the right tool with valid inputs.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact" style="height:1px;"></div>
+    <footer>
+      built by <span class="placeholder" style="padding:2px 8px;">Sim Wei Zhi</span> | <span id="year"></span>
+    </footer>
+  </main>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Media switcher (screenshot / live demo)
+  document.querySelectorAll('.media-switch').forEach(switcher => {
+    const tabs = switcher.querySelectorAll('.media-switch-tab');
+    const views = switcher.querySelectorAll('.media-switch-view');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        views.forEach(v => v.classList.remove('active'));
+        tab.classList.add('active');
+        switcher.querySelector(`.media-switch-view[data-view="${tab.dataset.view}"]`).classList.add('active');
+      });
+    });
+  });
+
+  // Chatbot demo
+  const demoSend = document.getElementById('chatbot-demo-send');
+  const demoBody = document.getElementById('chatbot-demo-body');
+  const demoPrompt = document.getElementById('chatbot-demo-prompt');
+  if (demoSend && demoBody && demoPrompt) {
+    demoSend.addEventListener('click', () => {
+      if (demoSend.disabled) return;
+      demoSend.disabled = true;
+
+      demoBody.innerHTML = '';
+
+      const userMsg = document.createElement('div');
+      userMsg.className = 'chat-msg chat-msg-user';
+      userMsg.innerHTML = `<span class="chat-role">User</span><p>${demoPrompt.value}</p>`;
+      demoBody.appendChild(userMsg);
+
+      const assistantMsg = document.createElement('div');
+      assistantMsg.className = 'chat-msg chat-msg-assistant chat-typing';
+      assistantMsg.innerHTML = `<span class="chat-role">Assistant</span><span class="chat-dots">Thinking…</span>`;
+      demoBody.appendChild(assistantMsg);
+
+      setTimeout(() => {
+        assistantMsg.classList.remove('chat-typing');
+        assistantMsg.innerHTML = `
+          <span class="chat-role">Assistant</span>
+          <p>Here's a summary for deal D00000001 (sample data):</p>
+          <table class="chat-table">
+            <thead><tr><th>Field</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Deal</td><td>D00000001</td></tr>
+              <tr><td>Notional</td><td>USD 5,000,000.00 (sample)</td></tr>
+              <tr><td>AFR (Client Value Fee)</td><td>1,234.00</td></tr>
+              <tr><td>Counterparty</td><td>ACME CORP (sample)</td></tr>
+              <tr><td>Maturity</td><td>2030-06-15</td></tr>
+            </tbody>
+          </table>
+        `;
+        demoSend.disabled = false;
+      }, 1000);
+    });
+  }
+</script>
+</body>
+</html>
